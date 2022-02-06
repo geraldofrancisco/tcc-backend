@@ -2,6 +2,7 @@ package com.thor.fitness.service.impl;
 
 import com.thor.fitness.dto.usuario.UsuarioDTO;
 import com.thor.fitness.dto.usuario.UsuarioInsertDTO;
+import com.thor.fitness.dto.usuario.UsuarioUpdateDTO;
 import com.thor.fitness.exception.RegraNegocioException;
 import com.thor.fitness.mapper.UsuarioMapper;
 import com.thor.fitness.model.Usuario;
@@ -50,6 +51,17 @@ public class UsuarioServiceImpl extends QueryImpl implements UsuarioService  {
         this.criarSenhaAleatóriaEEnviarPorEmail(entity);
         entity = this.repository.save(entity);
         return this.mapper.toDTO(entity);
+    }
+
+    @Override
+    public UsuarioDTO alterar(UsuarioUpdateDTO dto) {
+        //TODO: implementar
+        return null;
+    }
+
+    @Override
+    public void inativar(Long id) {
+        //TODO: implementar
     }
 
     private void validaSalvar(Usuario entity) {
