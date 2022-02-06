@@ -11,6 +11,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,7 +31,11 @@ public class UsuarioResource {
     @GetMapping
     @Operation(summary = "Busca de Usuários", responses = {
             @ApiResponse(description = "lista de usuários do sistema paginados", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = Page.class)))
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = Page.class)
+                    )
+            )
     })
     public Page<UsuarioDTO> buscaTodos(Pageable  pagina) {
         return this.service.buscarTodos(pagina);
@@ -38,8 +43,14 @@ public class UsuarioResource {
 
     @PostMapping
     @Operation(summary = "Salvar", responses = {
-            @ApiResponse(description = "Endpoint para salvar um novo usuário do sistema", responseCode = "200",
-                    content = @Content(schema = @Schema(implementation = UsuarioDTO.class)))
+            @ApiResponse(
+                    description = "Endpoint para salvar um novo usuário do sistema",
+                    responseCode = "200",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = UsuarioDTO.class)
+                    )
+            )
     })
     public UsuarioDTO salvar(@Valid @RequestBody UsuarioInsertDTO dto) {
         return this.service.salvar(dto);
