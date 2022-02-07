@@ -3,15 +3,22 @@ package com.thor.fitness.dto.error;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class ErroSistema {
 
-    private String userMessage;
+    private List<String> userMessage = new ArrayList<>();
     private LocalDateTime timestamp;
 
-    public ErroSistema(String userMessage) {
-        this.userMessage = userMessage;
+    public ErroSistema(String message) {
+        this.userMessage.add(message);
+        this.timestamp = LocalDateTime.now();
+    }
+
+    public ErroSistema(List<String> messages) {
+        this.userMessage = messages;
         this.timestamp = LocalDateTime.now();
     }
 }
