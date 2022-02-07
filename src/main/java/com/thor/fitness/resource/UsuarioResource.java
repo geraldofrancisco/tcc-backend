@@ -1,5 +1,6 @@
 package com.thor.fitness.resource;
 
+import com.thor.fitness.dto.usuario.UsuarioAtivacaoDTO;
 import com.thor.fitness.dto.usuario.UsuarioDTO;
 import com.thor.fitness.dto.usuario.UsuarioInsertDTO;
 import com.thor.fitness.dto.usuario.UsuarioUpdateDTO;
@@ -73,6 +74,21 @@ public class UsuarioResource {
     })
     public UsuarioDTO alterar(@Valid @RequestBody UsuarioUpdateDTO dto) {
         return this.service.alterar(dto);
+    }
+
+    @PutMapping
+    @Operation(summary = "Troca Senha", responses = {
+            @ApiResponse(
+                    description = "Endpoint para trocar a senha e ativar um usuário do sistema",
+                    responseCode = "200",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = UsuarioDTO.class)
+                    )
+            )
+    })
+    public void trocarSenha(@Valid @RequestBody UsuarioAtivacaoDTO dto) {
+         this.service.trocaSenha(dto);
     }
 
     @DeleteMapping("/{id}")

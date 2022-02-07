@@ -38,8 +38,6 @@ public class Usuario {
     @Column
     private LocalDate dataNascimento;
 
-    @NotBlank
-
     @Column
     @CPF
     @NotBlank
@@ -49,6 +47,7 @@ public class Usuario {
     @Column
     private String email;
 
+    @NotBlank
     @Column
     private String password;
 
@@ -58,6 +57,6 @@ public class Usuario {
     @Column(insertable = false)
     private boolean ativo;
 
-    @OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "usuario")
     private List<Telefone> telefones;
 }
