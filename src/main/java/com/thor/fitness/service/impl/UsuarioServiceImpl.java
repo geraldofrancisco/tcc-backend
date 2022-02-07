@@ -61,7 +61,16 @@ public class UsuarioServiceImpl extends QueryImpl implements UsuarioService  {
 
     @Override
     public void inativar(Long id) {
-        //TODO: implementar
+        Usuario usuario = this.repository.getById(id);
+        this.validaInativar(usuario);
+        usuario.setAtivo(false);
+        this.repository.save(usuario);
+    }
+
+    private void validaInativar(Usuario usuario) {
+        if(usuario == null) {
+            throw new RegraNegocioException("Não existe o usuário cadastrado no sistema");
+        }
     }
 
     private void validaSalvar(Usuario entity) {
