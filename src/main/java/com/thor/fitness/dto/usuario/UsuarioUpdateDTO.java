@@ -17,8 +17,5 @@ public class UsuarioUpdateDTO extends UsuarioDTO {
     private LocalDate dataNascimento;
 
     @NotNull
-    private String cpf;
-
-    @NotNull
     private String email;
 }

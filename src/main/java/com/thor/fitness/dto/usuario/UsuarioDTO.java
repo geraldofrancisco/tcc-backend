@@ -15,5 +15,6 @@ public class UsuarioDTO {
     private LocalDate dataNascimento;
     private String cpf;
     private String email;
+    private boolean ativo;
     private List<TelefoneDTO> telefones;
 }
