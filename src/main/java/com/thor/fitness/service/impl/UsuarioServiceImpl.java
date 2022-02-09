@@ -56,8 +56,12 @@ public class UsuarioServiceImpl extends QueryImpl implements UsuarioService {
 
     @Override
     public UsuarioDTO alterar(UsuarioUpdateDTO dto) {
-        //TODO: implementar
-        return null;
+        Usuario usuario = this.repository.getById(dto.getId());
+        this.validaSeExisteUsuario(usuario);
+        usuario.setNome(dto.getNome());
+        usuario.setDataNascimento(dto.getDataNascimento());
+        usuario.setEmail(dto.getEmail());
+        return this.mapper.toDTO(this.repository.save(usuario));
     }
 
     @Transactional
