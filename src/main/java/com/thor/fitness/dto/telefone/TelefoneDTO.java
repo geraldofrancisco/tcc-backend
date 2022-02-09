@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class TelefoneDTO {
     private Long id;
+    private Long usuarioId;
     private String telefone;
     private boolean whatsapp;
 }

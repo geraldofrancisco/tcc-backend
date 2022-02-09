@@ -11,4 +11,6 @@ public interface TelefoneMapper {
     TelefoneDTO toDTO(Telefone entity);
 
     List<TelefoneDTO> toDTO(List<Telefone> entity);
+
+    Telefone toEntity(TelefoneDTO dto);
 }
