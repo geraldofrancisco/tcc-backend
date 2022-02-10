@@ -7,7 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface TelefoneService {
-    Page<TelefoneDTO> buscarTodos(Pageable pagina);
+    Page<TelefoneDTO> buscarTodos(Long usuarioId, Pageable pagina);
 
     TelefoneDTO adicionar(TelefoneInsertDTO dto);
 

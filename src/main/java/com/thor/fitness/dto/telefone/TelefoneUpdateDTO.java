@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class TelefoneUpdateDTO {
+public class TelefoneUpdateDTO extends TelefoneDTO{
     @NotNull
     private Long id;
 

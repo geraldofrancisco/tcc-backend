@@ -33,10 +33,10 @@ public class Telefone {
     @Column
     private boolean whatsapp;
 
-    @Column
-    private Long usuarioId;
+    @Column(name = "usuario_id")
+    private Long idUsuario;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "usuario_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "usuario_id", insertable = false, updatable = false)
     private Usuario usuario;
 }
