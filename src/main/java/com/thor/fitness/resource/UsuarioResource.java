@@ -76,7 +76,7 @@ public class UsuarioResource {
         return this.service.alterar(dto);
     }
 
-    @PutMapping
+    @PutMapping("/trocar-senha")
     @Operation(summary = "Troca Senha", responses = {
             @ApiResponse(
                     description = "Endpoint para trocar a senha e ativar um usuário do sistema",
