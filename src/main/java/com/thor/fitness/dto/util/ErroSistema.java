@@ -1,4 +1,4 @@
-package com.thor.fitness.dto.error;
+package com.thor.fitness.dto.util;
 
 import lombok.Data;
 

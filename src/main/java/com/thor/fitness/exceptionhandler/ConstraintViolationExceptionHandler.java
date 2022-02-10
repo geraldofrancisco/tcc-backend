@@ -1,6 +1,6 @@
 package com.thor.fitness.exceptionhandler;
 
-import com.thor.fitness.dto.error.ErroSistema;
+import com.thor.fitness.dto.util.ErroSistema;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
