@@ -8,6 +8,8 @@
 
 package com.thor.fitness.ws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -56,9 +58,11 @@ public class EnderecoERP {
     protected String bairro;
     protected String cep;
     protected String cidade;
+    @JsonIgnore
     protected String complemento2;
     protected String end;
     protected String uf;
+    @JsonIgnore
     @XmlElement(nillable = true)
     protected List<UnidadePostagemERP> unidadesPostagem;
 
