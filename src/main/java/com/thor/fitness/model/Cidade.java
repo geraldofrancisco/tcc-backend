@@ -17,8 +17,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Data
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(exclude = "estado")
+@ToString(exclude = "estado")
 @NoArgsConstructor
 @Entity
 @Table(schema = "thor", name = "cidade")

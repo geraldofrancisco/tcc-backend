@@ -16,12 +16,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.List;
 
 @Data
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(of = {"id", "nome", "dataNascimento", "cpf", "email"})
+@ToString(of = {"id", "nome", "dataNascimento", "cpf", "email"})
 @NoArgsConstructor
 @Entity
 @Table(schema = "thor", name = "usuario")
@@ -30,6 +31,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Size(max = 100)
     @NotBlank
     @Column
     private String nome;
@@ -44,6 +46,7 @@ public class Usuario {
     private String cpf;
 
     @NotBlank
+    @Size(max = 200)
     @Column
     private String email;
 

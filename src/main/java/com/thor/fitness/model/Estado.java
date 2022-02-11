@@ -15,8 +15,8 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Data
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(exclude = "cidades")
+@ToString(exclude = "cidades")
 @NoArgsConstructor
 @Entity
 @Table(schema = "thor", name = "estado")

@@ -15,30 +15,55 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Data
-@EqualsAndHashCode(exclude = "usuario")
-@ToString(exclude = "usuario")
+@EqualsAndHashCode(exclude = {"usuario", "cidade"})
+@ToString(exclude = {"usuario", "cidade"})
 @NoArgsConstructor
 @Entity
-@Table(schema = "thor", name = "telefone")
-public class Telefone {
+@Table(schema = "thor", name = "endereco")
+public class Endereco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 15)
+    @NotBlank
+    @Size(max = 50)
     @Column
-    private String telefone;
+    private String apelido;
 
-    @Column
-    private boolean whatsapp;
-
+    @NotNull
     @Column(name = "usuario_id")
     private Long idUsuario;
+
+    @Size(max = 10)
+    @NotBlank
+    private String cep;
+
+    @NotNull
+    @Column(name = "cidade_id")
+    private Long idCidade;
+
+    @Size(max = 100)
+    @NotBlank
+    @Column
+    private String logradouro;
+
+    @Column
+    private Integer numero;
+
+    @Size(max = 50)
+    @Column
+    private String complemento;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
     @JoinColumn(name = "usuario_id", insertable = false, updatable = false)
     private Usuario usuario;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "cidade_id", insertable = false, updatable = false)
+    private Cidade cidade;
 }
