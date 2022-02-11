@@ -16,5 +16,4 @@ public class UsuarioDTO {
     private String cpf;
     private String email;
     private boolean ativo;
-    private List<TelefoneDTO> telefones;
 }
