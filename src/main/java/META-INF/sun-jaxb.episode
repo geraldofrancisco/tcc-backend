@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2022.02.11 às 01:13:06 PM BRT 
+
+  -->
+  <bindings xmlns:tns="http://cliente.bean.master.sigep.bsb.correios.com.br/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.thor.fitness.ws"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:VerificaSeTodosObjetosCancelados">
+      <class ref="com.thor.fitness.ws.VerificaSeTodosObjetosCancelados"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:VerificaSeTodosObjetosCanceladosResponse">
+      <class ref="com.thor.fitness.ws.VerificaSeTodosObjetosCanceladosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaPagamentoNaEntrega">
+      <class ref="com.thor.fitness.ws.AtualizaPagamentoNaEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaPagamentoNaEntregaResponse">
+      <class ref="com.thor.fitness.ws.AtualizaPagamentoNaEntregaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaRemessaAgrupada">
+      <class ref="com.thor.fitness.ws.AtualizaRemessaAgrupada"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaRemessaAgrupadaResponse">
+      <class ref="com.thor.fitness.ws.AtualizaRemessaAgrupadaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:bloquearObjeto">
+      <class ref="com.thor.fitness.ws.BloquearObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:bloquearObjetoResponse">
+      <class ref="com.thor.fitness.ws.BloquearObjetoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaCliente">
+      <class ref="com.thor.fitness.ws.BuscaCliente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaClienteResponse">
+      <class ref="com.thor.fitness.ws.BuscaClienteResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaContrato">
+      <class ref="com.thor.fitness.ws.BuscaContrato"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaContratoResponse">
+      <class ref="com.thor.fitness.ws.BuscaContratoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaDataAtual">
+      <class ref="com.thor.fitness.ws.BuscaDataAtual"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaDataAtualResponse">
+      <class ref="com.thor.fitness.ws.BuscaDataAtualResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaOpcoes">
+      <class ref="com.thor.fitness.ws.BuscaOpcoes"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaOpcoesResponse">
+      <class ref="com.thor.fitness.ws.BuscaOpcoesResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaPagamentoEntrega">
+      <class ref="com.thor.fitness.ws.BuscaPagamentoEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaPagamentoEntregaResponse">
+      <class ref="com.thor.fitness.ws.BuscaPagamentoEntregaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicos">
+      <class ref="com.thor.fitness.ws.BuscaServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosAdicionaisAtivos">
+      <class ref="com.thor.fitness.ws.BuscaServicosAdicionaisAtivos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosAdicionaisAtivosResponse">
+      <class ref="com.thor.fitness.ws.BuscaServicosAdicionaisAtivosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosResponse">
+      <class ref="com.thor.fitness.ws.BuscaServicosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosValorDeclarado">
+      <class ref="com.thor.fitness.ws.BuscaServicosValorDeclarado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosValorDeclaradoResponse">
+      <class ref="com.thor.fitness.ws.BuscaServicosValorDeclaradoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosXServicosAdicionais">
+      <class ref="com.thor.fitness.ws.BuscaServicosXServicosAdicionais"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosXServicosAdicionaisResponse">
+      <class ref="com.thor.fitness.ws.BuscaServicosXServicosAdicionaisResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaTarifaVale">
+      <class ref="com.thor.fitness.ws.BuscaTarifaVale"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaTarifaValeResponse">
+      <class ref="com.thor.fitness.ws.BuscaTarifaValeResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:calculaTarifaServico">
+      <class ref="com.thor.fitness.ws.CalculaTarifaServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:calculaTarifaServicoResponse">
+      <class ref="com.thor.fitness.ws.CalculaTarifaServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarObjeto">
+      <class ref="com.thor.fitness.ws.CancelarObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarObjetoResponse">
+      <class ref="com.thor.fitness.ws.CancelarObjetoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarPedidoScol">
+      <class ref="com.thor.fitness.ws.CancelarPedidoScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarPedidoScolResponse">
+      <class ref="com.thor.fitness.ws.CancelarPedidoScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaCEP">
+      <class ref="com.thor.fitness.ws.ConsultaCEP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaCEPResponse">
+      <class ref="com.thor.fitness.ws.ConsultaCEPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlp">
+      <class ref="com.thor.fitness.ws.FechaPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpResponse">
+      <class ref="com.thor.fitness.ws.FechaPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpVariosServicos">
+      <class ref="com.thor.fitness.ws.FechaPlpVariosServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpVariosServicosResponse">
+      <class ref="com.thor.fitness.ws.FechaPlpVariosServicosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:geraDigitoVerificadorEtiquetas">
+      <class ref="com.thor.fitness.ws.GeraDigitoVerificadorEtiquetas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:geraDigitoVerificadorEtiquetasResponse">
+      <class ref="com.thor.fitness.ws.GeraDigitoVerificadorEtiquetasResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusCartaoPostagem">
+      <class ref="com.thor.fitness.ws.GetStatusCartaoPostagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusCartaoPostagemResponse">
+      <class ref="com.thor.fitness.ws.GetStatusCartaoPostagemResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusPLP">
+      <class ref="com.thor.fitness.ws.GetStatusPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusPLPResponse">
+      <class ref="com.thor.fitness.ws.GetStatusPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:integrarUsuarioScol">
+      <class ref="com.thor.fitness.ws.IntegrarUsuarioScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:integrarUsuarioScolResponse">
+      <class ref="com.thor.fitness.ws.IntegrarUsuarioScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterClienteAtualizacao">
+      <class ref="com.thor.fitness.ws.ObterClienteAtualizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterClienteAtualizacaoResponse">
+      <class ref="com.thor.fitness.ws.ObterClienteAtualizacaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterEmbalagemLRS">
+      <class ref="com.thor.fitness.ws.ObterEmbalagemLRS"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterEmbalagemLRSResponse">
+      <class ref="com.thor.fitness.ws.ObterEmbalagemLRSResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterMensagemParametrizada">
+      <class ref="com.thor.fitness.ws.ObterMensagemParametrizada"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterMensagemParametrizadaResponse">
+      <class ref="com.thor.fitness.ws.ObterMensagemParametrizadaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarDimensoesServico">
+      <class ref="com.thor.fitness.ws.PesquisarDimensoesServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarDimensoesServicoResponse">
+      <class ref="com.thor.fitness.ws.PesquisarDimensoesServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarEmbalagensPorServico">
+      <class ref="com.thor.fitness.ws.PesquisarEmbalagensPorServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarEmbalagensPorServicoResponse">
+      <class ref="com.thor.fitness.ws.PesquisarEmbalagensPorServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarParametrosPorDescricao">
+      <class ref="com.thor.fitness.ws.PesquisarParametrosPorDescricao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarParametrosPorDescricaoResponse">
+      <class ref="com.thor.fitness.ws.PesquisarParametrosPorDescricaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarServicosAdicionais">
+      <class ref="com.thor.fitness.ws.PesquisarServicosAdicionais"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pesquisarServicosAdicionaisResponse">
+      <class ref="com.thor.fitness.ws.PesquisarServicosAdicionaisResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaEtiquetas">
+      <class ref="com.thor.fitness.ws.SolicitaEtiquetas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaEtiquetasResponse">
+      <class ref="com.thor.fitness.ws.SolicitaEtiquetasResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaPLP">
+      <class ref="com.thor.fitness.ws.SolicitaPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaPLPResponse">
+      <class ref="com.thor.fitness.ws.SolicitaPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaXmlPlp">
+      <class ref="com.thor.fitness.ws.SolicitaXmlPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaXmlPlpResponse">
+      <class ref="com.thor.fitness.ws.SolicitaXmlPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitarPostagemScol">
+      <class ref="com.thor.fitness.ws.SolicitarPostagemScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitarPostagemScolResponse">
+      <class ref="com.thor.fitness.ws.SolicitarPostagemScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaEtiquetaPLP">
+      <class ref="com.thor.fitness.ws.ValidaEtiquetaPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaEtiquetaPLPResponse">
+      <class ref="com.thor.fitness.ws.ValidaEtiquetaPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaPlp">
+      <class ref="com.thor.fitness.ws.ValidaPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaPlpResponse">
+      <class ref="com.thor.fitness.ws.ValidaPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemReversa">
+      <class ref="com.thor.fitness.ws.ValidarPostagemReversa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemReversaResponse">
+      <class ref="com.thor.fitness.ws.ValidarPostagemReversaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemSimultanea">
+      <class ref="com.thor.fitness.ws.ValidarPostagemSimultanea"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemSimultaneaResponse">
+      <class ref="com.thor.fitness.ws.ValidarPostagemSimultaneaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaDisponibilidadeServico">
+      <class ref="com.thor.fitness.ws.VerificaDisponibilidadeServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaDisponibilidadeServicoResponse">
+      <class ref="com.thor.fitness.ws.VerificaDisponibilidadeServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaModalTransporte">
+      <class ref="com.thor.fitness.ws.VerificaModalTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaModalTransporteResponse">
+      <class ref="com.thor.fitness.ws.VerificaModalTransporteResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:SQLException">
+      <class ref="com.thor.fitness.ws.SQLException"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Exception">
+      <class ref="com.thor.fitness.ws.Exception"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ErroMontagemRelatorio">
+      <class ref="com.thor.fitness.ws.ErroMontagemRelatorio"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoAdicionalXML">
+      <class ref="com.thor.fitness.ws.ServicoAdicionalXML"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoPostal">
+      <class ref="com.thor.fitness.ws.ObjetoPostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoPostalPK">
+      <class ref="com.thor.fitness.ws.ObjetoPostalPK"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:preListaPostagem">
+      <class ref="com.thor.fitness.ws.PreListaPostagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cartaoPostagemERP">
+      <class ref="com.thor.fitness.ws.CartaoPostagemERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:contratoERP">
+      <class ref="com.thor.fitness.ws.ContratoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:clienteERP">
+      <class ref="com.thor.fitness.ws.ClienteERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:gerenteConta">
+      <class ref="com.thor.fitness.ws.GerenteConta"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:usuarioInstalacao">
+      <class ref="com.thor.fitness.ws.UsuarioInstalacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:parametroMaster">
+      <class ref="com.thor.fitness.ws.ParametroMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:contratoERPPK">
+      <class ref="com.thor.fitness.ws.ContratoERPPK"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:unidadePostagemERP">
+      <class ref="com.thor.fitness.ws.UnidadePostagemERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:enderecoERP">
+      <class ref="com.thor.fitness.ws.EnderecoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoERP">
+      <class ref="com.thor.fitness.ws.ServicoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoSigep">
+      <class ref="com.thor.fitness.ws.ServicoSigep"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:chancelaMaster">
+      <class ref="com.thor.fitness.ws.ChancelaMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoAdicionalERP">
+      <class ref="com.thor.fitness.ws.ServicoAdicionalERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:valorDeclarado">
+      <class ref="com.thor.fitness.ws.ValorDeclarado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:vigenciaERP">
+      <class ref="com.thor.fitness.ws.VigenciaERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:dimensaoTO">
+      <class ref="com.thor.fitness.ws.DimensaoTO"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:medidaTO">
+      <class ref="com.thor.fitness.ws.MedidaTO"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:embalagemLRSMaster">
+      <class ref="com.thor.fitness.ws.EmbalagemLRSMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:valePostal">
+      <class ref="com.thor.fitness.ws.ValePostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coletaSimultanea">
+      <class ref="com.thor.fitness.ws.ColetaSimultanea"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coleta">
+      <class ref="com.thor.fitness.ws.Coleta"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:produto">
+      <class ref="com.thor.fitness.ws.Produto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:remetente">
+      <class ref="com.thor.fitness.ws.Remetente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pessoa">
+      <class ref="com.thor.fitness.ws.Pessoa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoAdicionalTO">
+      <class ref="com.thor.fitness.ws.ServicoAdicionalTO"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:retornoCancelamento">
+      <class ref="com.thor.fitness.ws.RetornoCancelamento"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoSimplificado">
+      <class ref="com.thor.fitness.ws.ObjetoSimplificado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coletaReversa">
+      <class ref="com.thor.fitness.ws.ColetaReversa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objeto">
+      <class ref="com.thor.fitness.ws.Objeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:mensagemParametrizadaTO">
+      <class ref="com.thor.fitness.ws.MensagemParametrizadaTO"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusGerente">
+      <typesafeEnumClass ref="com.thor.fitness.ws.StatusGerente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoGerente">
+      <typesafeEnumClass ref="com.thor.fitness.ws.TipoGerente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusUsuario">
+      <typesafeEnumClass ref="com.thor.fitness.ws.StatusUsuario"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:categoriaServico">
+      <typesafeEnumClass ref="com.thor.fitness.ws.CategoriaServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:simNao">
+      <typesafeEnumClass ref="com.thor.fitness.ws.SimNao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusPlp">
+      <typesafeEnumClass ref="com.thor.fitness.ws.StatusPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusObjetoPostal">
+      <typesafeEnumClass ref="com.thor.fitness.ws.StatusObjetoPostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoEmbalagem">
+      <typesafeEnumClass ref="com.thor.fitness.ws.TipoEmbalagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusCartao">
+      <typesafeEnumClass ref="com.thor.fitness.ws.StatusCartao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoBloqueio">
+      <typesafeEnumClass ref="com.thor.fitness.ws.TipoBloqueio"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:acao">
+      <typesafeEnumClass ref="com.thor.fitness.ws.Acao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoMensagem">
+      <typesafeEnumClass ref="com.thor.fitness.ws.TipoMensagem"/>
+    </bindings>
+  </bindings>
+</bindings>
