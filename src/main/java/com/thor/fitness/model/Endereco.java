@@ -35,7 +35,6 @@ public class Endereco {
     @Column
     private String apelido;
 
-    @NotNull
     @Column(name = "usuario_id")
     private Long idUsuario;
 
@@ -46,6 +45,10 @@ public class Endereco {
     @NotNull
     @Column(name = "cidade_id")
     private Long idCidade;
+
+    @Size(max = 100)
+    @NotBlank
+    private String bairro;
 
     @Size(max = 100)
     @NotBlank
