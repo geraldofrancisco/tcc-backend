@@ -2,9 +2,10 @@ create table thor.endereco
 (
     id          bigserial    not null primary key,
     apelido     varchar(50)  not null,
-    usuario_id  bigint       not null,
+    usuario_id  bigint,
     cep         varchar(10)  not null,
     cidade_id   integer      not null,
+    bairro      varchar(100) not null,
     logradouro  varchar(100) not null,
     numero      smallint,
     complemento varchar(50)

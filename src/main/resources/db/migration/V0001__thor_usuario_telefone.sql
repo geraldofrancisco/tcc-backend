@@ -15,7 +15,7 @@ create table thor.usuario
 create table thor.telefone
 (
     id         bigserial   NOT NULL primary KEY,
-    usuario_id bigint      not null,
+    usuario_id bigint,
     telefone   varchar(15) not null,
     whatsapp   boolean     not null
 );
