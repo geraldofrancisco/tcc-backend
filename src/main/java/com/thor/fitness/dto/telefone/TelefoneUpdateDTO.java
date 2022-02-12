@@ -10,9 +10,6 @@ public class TelefoneUpdateDTO extends TelefoneDTO{
     @NotNull
     private Long id;
 
-    @NotNull
-    private Long usuarioId;
-
     @NotBlank
     private String telefone;
 

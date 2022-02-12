@@ -7,8 +7,6 @@ import javax.validation.constraints.NotNull;
 
 @Data
 public class TelefoneInsertDTO extends TelefoneDTO {
-    @NotNull
-    private Long usuarioId;
 
     @NotBlank
     private String telefone;
