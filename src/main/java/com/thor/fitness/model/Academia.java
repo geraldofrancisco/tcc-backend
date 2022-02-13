@@ -41,6 +41,6 @@ public class Academia {
     private Long idEndereco;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "endereco_id")
+    @JoinColumn(name = "endereco_id", updatable = false, insertable = false)
     private Endereco endereco;
 }
