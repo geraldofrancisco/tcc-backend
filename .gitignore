@@ -162,5 +162,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+src/main/java/com/thor/fitness/ws/
+src/main/java/META-INF/sun-jaxb.episode
+
 
 # End of https://www.gitignore.io/api/git,java,maven,eclipse,windows
