@@ -69,12 +69,4 @@ public class EnderecoServiceImpl extends QueryImpl implements EnderecoService {
             throw new RegraNegocioException("Endereço não encontrado");
         }
     }
-
-    private boolean existeTelefoneParaUsuario(Long usuarioId, String telefone) {
-        String sql = "SELECT COUNT(t) FROM Endereco e WHERE t.usuarioId = :id OR t.telefone = :telefone";
-        TypedQuery<Long> query = this.em.createQuery(sql, Long.class);
-        query.setParameter("id", usuarioId);
-        query.setParameter("telefone", telefone);
-        return query.getSingleResult() > 0;
-    }
 }
