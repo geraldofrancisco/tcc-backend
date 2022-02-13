@@ -1,5 +1,6 @@
 package com.thor.fitness.dto.endereco;
 
+import com.thor.fitness.dto.estado.EstadoDTO;
 import lombok.Data;
 
 @Data
@@ -13,4 +14,5 @@ public class EnderecoDTO {
     private Integer numero;
     private String complemento;
     private String bairro;
+    private EstadoDTO estado;
 }
