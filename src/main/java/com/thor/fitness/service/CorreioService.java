@@ -1,7 +1,7 @@
 package com.thor.fitness.service;
 
-import com.thor.fitness.ws.EnderecoERP;
+import com.thor.fitness.dto.correio.CorreioDTO;
 
 public interface CorreioService {
-    EnderecoERP consultaCep(String cep);
+    CorreioDTO consultaCep(String cep);
 }
