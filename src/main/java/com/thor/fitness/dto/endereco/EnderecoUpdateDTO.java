@@ -1,5 +1,6 @@
 package com.thor.fitness.dto.endereco;
 
+import com.thor.fitness.dto.estado.EstadoDTO;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
@@ -21,4 +22,7 @@ public class EnderecoUpdateDTO extends EnderecoDTO {
 
     @NotBlank
     private String logradouro;
+
+    @NotNull
+    private EstadoDTO estado;
 }

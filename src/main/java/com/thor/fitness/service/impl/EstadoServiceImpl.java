@@ -15,8 +15,4 @@ public class EstadoServiceImpl extends QueryImpl implements EstadoService {
     @Autowired
     private EstadoRepository repository;
 
-    @Override
-    public List<DropDown> buscaTodos() {
-        return this.repository.buscaTodos();
-    }
 }
