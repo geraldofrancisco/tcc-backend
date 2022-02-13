@@ -1,8 +1,7 @@
 create table thor.estado
 (
-    id    smallserial NOT NULL primary KEY,
-    nome  varchar(19) not null,
-    sigla varchar(2)  not null
+    sigla varchar(2)  not null primary key,
+    nome  varchar(19) not null
 );
 
 insert into thor.estado (nome, sigla)

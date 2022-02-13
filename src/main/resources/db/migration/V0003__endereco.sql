@@ -4,7 +4,8 @@ create table thor.endereco
     apelido     varchar(50)  not null,
     usuario_id  bigint,
     cep         varchar(10)  not null,
-    cidade_id   integer      not null,
+    estado      varchar(2)   not null,
+    cidade      varchar(100) not null,
     bairro      varchar(100) not null,
     logradouro  varchar(100) not null,
     numero      smallint,
@@ -16,5 +17,5 @@ alter table thor.endereco
         references thor.usuario (id);
 
 alter table thor.endereco
-    add constraint fk_endereco_cidade foreign key (cidade_id)
-        references thor.cidade (id);
+    add constraint fk_endereco_estado foreign key (estado)
+        references thor.estado (sigla);

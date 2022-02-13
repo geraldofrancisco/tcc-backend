@@ -5,3 +5,7 @@ create table thor.academia
     cnpj        varchar(18) not null,
     endereco_id bigint      not null
 );
+
+alter table thor.academia
+    add constraint fk_academia_endereco foreign key (endereco_id)
+        references thor.endereco (id);

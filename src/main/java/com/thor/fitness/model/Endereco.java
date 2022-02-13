@@ -43,8 +43,8 @@ public class Endereco {
     private String cep;
 
     @NotNull
-    @Column(name = "cidade_id")
-    private Long idCidade;
+    @Column(name = "estado")
+    private String uf;
 
     @Size(max = 100)
     @NotBlank
@@ -67,6 +67,6 @@ public class Endereco {
     private Usuario usuario;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "cidade_id", insertable = false, updatable = false)
-    private Cidade cidade;
+    @JoinColumn(name = "estado", insertable = false, updatable = false)
+    private Estado estado;
 }

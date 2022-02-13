@@ -21,16 +21,10 @@ import java.util.List;
 @Entity
 @Table(schema = "thor", name = "estado")
 public class Estado {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String sigla;
 
     @Column
     private String nome;
-
-    @Column
-    private String sigla;
-
-    @OneToMany(mappedBy = "estado")
-    private List<Cidade> cidades;
 }
