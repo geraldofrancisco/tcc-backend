@@ -18,4 +18,9 @@ public class UsuarioInsertDTO extends UsuarioDTO {
 
     @NotNull
     private String email;
+
+    @Override
+    public Long getId() {
+        return null;
+    }
 }

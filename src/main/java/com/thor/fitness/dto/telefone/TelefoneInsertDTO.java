@@ -13,4 +13,9 @@ public class TelefoneInsertDTO extends TelefoneDTO {
 
     @NotNull
     private boolean whatsapp;
+
+    @Override
+    public Long getId() {
+        return null;
+    }
 }
