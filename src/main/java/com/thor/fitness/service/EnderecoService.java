@@ -11,5 +11,5 @@ public interface EnderecoService {
 
     EnderecoDTO editar(EnderecoDTO dto);
 
-    void excluir(Long usuario);
+    void excluir(Long endereco);
 }

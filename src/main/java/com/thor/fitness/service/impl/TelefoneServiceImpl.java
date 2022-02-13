@@ -46,7 +46,8 @@ public class TelefoneServiceImpl extends QueryImpl implements TelefoneService {
 
     private void validaAdicionar(Telefone telefone) {
         this.validateUtils.valida(telefone);
-        if(this.existeTelefoneParaUsuario(telefone.getIdUsuario(), telefone.getTelefone())) {
+        if(telefone.getIdUsuario() != null &&
+                this.existeTelefoneParaUsuario(telefone.getIdUsuario(), telefone.getTelefone())) {
             throw new RegraNegocioException("Telefone já cadastrado para o usuário");
         }
     }
@@ -61,7 +62,8 @@ public class TelefoneServiceImpl extends QueryImpl implements TelefoneService {
 
     private void validaAlterar(Telefone telefone) {
         this.validateUtils.valida(telefone);
-        if(!this.existeTelefoneParaUsuario(telefone.getIdUsuario(), telefone.getTelefone())) {
+        if(telefone.getIdUsuario() != null &&
+                !this.existeTelefoneParaUsuario(telefone.getIdUsuario(), telefone.getTelefone())) {
             throw new RegraNegocioException("Telefone não encontrado");
         }
     }
