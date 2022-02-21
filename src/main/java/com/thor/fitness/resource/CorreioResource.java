@@ -2,7 +2,6 @@ package com.thor.fitness.resource;
 
 import com.thor.fitness.dto.correio.CorreioDTO;
 import com.thor.fitness.service.CorreioService;
-import com.thor.fitness.ws.EnderecoERP;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

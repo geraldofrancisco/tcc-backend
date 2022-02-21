@@ -14,17 +14,21 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.net.URI;
+import java.net.URISyntaxException;
+
+import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 public class CorreioResourceTest {
+
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void deveResponder200CepValido() throws Exception {
+    public void consultaCep() throws Exception {
         URI uri = new URI("/correio/cep/31235100");
         this.mockMvc
                 .perform(MockMvcRequestBuilders
@@ -38,7 +42,7 @@ public class CorreioResourceTest {
     }
 
     @Test
-    public void deveResponder400CepInvalido() throws Exception {
+    public void consultaCepInvalido() throws Exception {
         URI uri = new URI("/correio/cep/31313131");
         this.mockMvc
                 .perform(MockMvcRequestBuilders
